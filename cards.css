@@ -1,0 +1,321 @@
+
+/* Media query for small screens (phones) */
+@media only screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .TopContainer {
+    flex-wrap: wrap; /* Prevent wrapping on small screens */
+    justify-content: flex-start; /* Align items to the start */
+  }
+
+  .FiltersContainer {
+    order: 1; /* Move FiltersContainer to the top */
+    width: 100%; /* Take full width on small screens */
+    margin-bottom: 10px; /* Add some space between FiltersContainer and CPContainer */
+  }
+
+  .CPContainer {
+    order: 2; /* Move CPContainer below FiltersContainer */
+  }
+}
+
+/* Media query for screens between 768px and 1023px */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .TopContainer {
+    justify-content: center; /* Center content on medium screens */
+  }
+}
+
+/* Media query for screens 1024px and larger */
+@media only screen and (min-width: 1024px) {
+  .TopContainer {
+    justify-content: space-between; /* Align items to the space between on larger screens */
+  }
+
+  .FiltersContainer {
+    width: auto; /* Allow FiltersContainer to take its natural width */
+  }
+
+  .CPContainer {
+    margin-left: 20px; /* Add some space between FiltersContainer and CPContainer */
+  }
+}
+
+@media only screen and (max-width: 617px) {
+  .card{
+    width: 350px!important;
+    height: 230px!important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .filtred{
+    max-width: 725px!important;
+    width: 100%!important;
+  }
+  .TopContainer{
+    max-width: 90%;
+  }
+}
+
+
+* {
+  margin: 0;
+}
+
+html {
+  background-color: #16181c;
+}
+
+.card {
+  padding: 1rem;
+  margin: 10px;
+  width: 250px;
+  height: 230px;
+  border-radius: 1rem;
+  background-color: #26292f;
+  position: relative;
+}
+
+
+
+h2 {
+  color: #ecf9fb;
+  font-size: 17px;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Roboto, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.cardimage {
+  background-color: #16181c;
+  width: 96;
+  height: 96;
+  max-width: 96;
+  max-height: 96;
+  border-radius: 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.TopCardContainer {
+  display: flex;
+  align-items: flex-start;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0px 0px 12px;
+  color: #b0bac5;
+  height: 108px;
+}
+
+.filtred {
+  margin: 15px;
+  padding: 30px 5px;
+  background-color: #26292f;
+  border-radius: 0.5rem;
+  width: 320px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  color: #b0bac5;
+  gap: 0.5rem;
+}
+
+p {
+  margin: 0px;
+  display: block;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Roboto, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+
+}
+
+.TopContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.CardsContainer {
+  max-width: 1400px;
+  min-height: 850px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex-grow: 1; /* Allow the description to take the remaining space */
+}
+
+.short-description {
+  overflow: hidden;
+  position: relative;
+  color: #b0bac5;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Roboto, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  margin-top: 5px;
+  height: 84px;
+}
+
+.full-description {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  z-index: 100;
+}
+
+
+
+
+
+.cardimage {
+  background-color: #16181c;
+  width: 96px;
+  height: 96px;
+  min-width: 96px;
+  min-height: 96px;
+  border-radius: 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cardimage, .textContainer h2{
+  cursor: pointer;
+
+}
+
+.PagesContainer {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.page-number {
+  background-color: #7e292a;
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 5px;
+}
+
+.ActivePage{
+  background-color: #ffb3b0;
+  color: #7e292a;
+}
+
+.filter input{
+  margin: 0 15px 0 10px;
+}
+
+.FiltersContainer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  color: #b0bac5;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Roboto, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.TotalTranslation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b0bac5;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Roboto, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 600;
+  background-color: #7e292a;
+  min-width: 310px;
+  width: calc(100%-50px);
+  padding: 10px;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.TotalContainer {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ellipsis{
+  color: #b0bac5;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Roboto, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+}
+
+
+.author{
+  text-decoration: none;
+}
+
+.page-number{
+  cursor: pointer;
+}
+
+.statusicon{
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5px;
+}
+
+.IconContainer {
+  margin-top: auto; /* Push the IconContainer to the bottom */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.completedIcon {
+  background-image: url('/icon/completed.svg');
+}
+
+.semiverifiedIcon {
+  background-image: url('/icon/semiverified.svg');
+}
+
+.verifiedIcon {
+  background-image: url('/icon/verify.svg');
+}
+
+.itemid{
+  position: absolute;
+  top: 1px;
+  color: #b0bac521;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Roboto, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 10px;
+  margin-left: 5px;
+
+}

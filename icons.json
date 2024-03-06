@@ -1,0 +1,18 @@
+{
+    "completed": {
+      "icon_id": 1,
+      "icon": "https://svgshare.com/i/13yx.svg",
+      "title": "У роботі"
+    },
+    "semiverified": {
+      "icon_id": 2,
+      "icon": "https://svgshare.com/i/13yF.svg",
+      "title": "Розробник або додасть, або існує ще один переклад"
+    },
+    "verified": {
+      "icon_id": 3,
+      "icon": "https://svgshare.com/i/13yn.svg",
+      "title": "Розробник моду додав наш переклад"
+    }
+  }
+  

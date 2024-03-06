@@ -1,10 +1,16 @@
 [
     {
+        "status": {
+            "status1": "https://badges.crowdin.net/biomemakeoverua/localized.svg",
+            "status2": "https://badges.crowdin.net/60seconds-part2/localized.svg"
+        },
         "title": "60 Seconds",
         "description": "60 Seconds! - це похмура комедійна атомна пригода про пошук і виживання. Зберіть припаси та врятуйте свою сім'ю до того, як вибухне ядерна бомба. Залишайтеся живими у своєму укритті від радіоактивних опадів. Приймайте складні рішення, розподіляйте їжу та полюйте на тарганів-мутантів. І, можливо, виживете. А може, й ні.",
         "image": "https://i.imgur.com/ppB4GQP.png",
         "author": "MEGATREX4, Artem Tsynoborenko",
-        "completed": false
+        "completed": false,
+        "tooltip": "Ця відмітка означає що розробник додав переклад в програму і він вже вбудований, нічого довантажувати і встановлювати не треба(Насправді не знаю коли додадуть точно, але сторінка Crowdin вже існує і ми туди трохи доклались).",
+        "id": "000128"
     },
     {
         "title": "Twitch Downloader",
@@ -14,18 +20,55 @@
         "author": "MEGATREX4",
         "completed": true,
         "tooltip": "Ця відмітка означає що розробник додав переклад в програму і він вже вбудований, нічого довантажувати і встановлювати не треба(автор(и) крутий).",
-        "Link": "https://github.com/lay295/TwitchDownloader"
+        "link": "https://github.com/lay295/TwitchDownloader",
+        "id": "000129"
     },
     {
         "title": "Modrinth (сайт)",
         "description": "Сайт творців лаунчера майнкрафт з відкритим кодом і власною бібліотекою модів, збірок, ресурспаків тощо.",
         "image": "https://raw.githubusercontent.com/modrinth/art/main/Branding/Favicon/favicon__512x512.png",
         "verified": true,
-        "author": "Команда СУМ, MeDustyy, OmniverseTraitor, Artem Nizhensky, Alexosh",
+        "author": "СУМ, MeDustyy, OmniverseTraitor, Artem Nizhensky, Alexosh",
         "completed": true,
         "tooltip": "Ця відмітка означає що розробник додав переклад в програму і він вже вбудований, нічого довантажувати і встановлювати не треба(Насправді не знаю коли додадуть точно, але сторінка Crowdin вже існує і ми туди трохи доклались).",
-        "Link": "https://crowdin.com/project/modrinth",
-        "semiverified": true
+        "link": "https://crowdin.com/project/modrinth",
+        "semiverified": true,
+        "id": "000130"
+    },
+    {
+        "title": "Grapples Galore",
+        "description": "Grapples Galore - це динамічний багатокористувацький онлайн-шутер з фізично реалізованими гаками, активними реґдоллами та захопливими перестрілками.",
+        "image": "https://qame.info/wp-content/uploads/2023/11/72926_main_library_600x900_2x-1.jpg.webp",
+        "verified": true,
+        "author": "moralniy, awzix",
+        "completed": true,
+        "link": "https://store.steampowered.com/app/2239140/Grapples_Galore",
+        "id": "000131"
+    },
+    {
+        "status": {
+            "status1": "https://badges.crowdin.net/the-henry-stickmin-collection/localized.svg"
+        },
+        "id": "000128",
+        "title": "The Henry Stickmin Collection",
+        "description": "Вибір власного варіанта шляху, де поразка приносить набагато більше задоволення, ніж здобуття успіху.",
+        "image": "https://i.imgur.com/3uAWpcv.png",
+        "verified": false,
+        "author": "СУМ, Patsiuk Localizator",
+        "completed": false,
+        "link": "https://t.me/patsyuk_localizator"
+    },
+    {
+        "status": {
+            "status1": "https://badges.crowdin.net/ages-of-conflict-UA/localized.svg"
+        },
+        "id": "000132",
+        "title": "Ages of Conflict: World War Simulator",
+        "description": "Ages of Conflict - це універсальна гра в жанрі картографічного симулятора, де ви створюєте власні або випадкові нації за допомогою ШІ та спостерігаєте за їхньою боротьбою у нескінченній кількості світів. Командуйте націями, щоб змінити події у світі на свій розсуд.",
+        "image": "https://i.imgur.com/qDLRhqZ.png",
+        "verified": false,
+        "author": "СУМ, Patsiuk Localizator",
+        "completed": false,
+        "link": "https://t.me/patsyuk_localizator"
     }
-
 ]

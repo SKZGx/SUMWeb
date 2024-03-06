@@ -4,18 +4,20 @@
         "description": "Можливості варіюються від простих змін, таких як вища цукрова тростина, до масштабних капітальних ремонтів основних систем, таких як зачарування.",
         "image": "https://media.forgecdn.net/avatars/806/643/638174667713250064.png",
         "verified": true,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://www.curseforge.com/minecraft/mc-mods/apotheosis"
+        "link": "https://www.curseforge.com/minecraft/mc-mods/apotheosis",
+        "id": "000001"
     },
     {
         "title": "Gobber 2",
         "description": "Мод Gobber призначений для того, щоб зробити гру більш захоплюючою, надаючи покращену броню, інструменти та зброю.",
         "image": "https://media.forgecdn.net/avatars/265/418/637229299628778865.png",
-        "verified": false,
-        "author": "",
+        "verified": true,
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000002"
     },
     {
         "title": "Immersive Engineering",
@@ -24,279 +26,310 @@
         "verified": true,
         "author": "MEGATREX4, hnufelka, CakesTwix, ICHTLAY",
         "completed": true,
-        "Link": "https://www.curseforge.com/minecraft/mc-mods/immersive-engineering"
+        "link": "https://www.curseforge.com/minecraft/mc-mods/immersive-engineering",
+        "id": "000003"
     },
     {
         "title": "Spice of Life: SPE",
         "description": "Цей мод додає переваги від вживання різноманітної їжі у Minecraft. Він відстежує ваш раціон і дає вам атрибути або ефекти на основі вашої оцінки різноманітності.",
         "image": "https://media.forgecdn.net/avatars/570/46/637930919653071925.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000004"
     },
     {
         "title": "delightful",
         "description": "Налаштовуваний аддон Farmer's Delight з функціями сумісності та захоплюючими новими продуктами.",
         "image": "https://cdn.modrinth.com/data/JtSnhtNJ/707d7697b315dd6dfc84648c893bf3e057bb3e34.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/delightful"
+        "link": "https://modrinth.com/mod/delightful",
+        "id": "000005"
     },
     {
         "title": "End's Delight",
         "description": "End's Delight - це аддон-мод для Farmer's Delight, заснований на додаванні кулінарного контенту з предметів Енду!",
         "image": "https://cdn.modrinth.com/data/yHN0njMr/8b215554e49c51cb5bb5ded435263d2078e0829e.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/ends-delight"
+        "link": "https://modrinth.com/mod/ends-delight",
+        "id": "000006"
     },
     {
         "title": "Framed Compacting Drawers",
         "description": "Це аддон-мод до Storage Drawers, який додає безмежно велику кількість нових ящиків до гри.",
         "image": "https://media.forgecdn.net/avatars/264/387/637226486288344415.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000007"
     },
     {
         "title": "Frozen Delight",
         "description": "Frozen Delight - це просте, але якісне доповнення для Farmer's Delight, яке робить його більш сумісним з Frozen Up!",
         "image": "https://media.forgecdn.net/avatars/807/186/638176014809459782.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000008"
     },
     {
         "title": "Frozen Up",
         "description": "мод, який додає купу нових можливостей, зберігаючи при цьому класичний стиль Minecraft. Він додає нових чарівних пухнастих рептилій: чилу, пінгвінів, північних оленів, оновлює іглу та багато іншого!",
         "image": "https://media.forgecdn.net/avatars/595/853/637971166121370460.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000009"
     },
     {
         "title": "Ore Excavation",
         "description": "Дозволяє гравцям видобувати цілі жили руди, рубати цілі дерева або виконувати будь-які інші дії з інструментами за один раз. ",
         "image": "https://media.forgecdn.net/avatars/50/412/636090834615920242.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000010"
     },
     {
         "title": "Rotten Creatures",
         "description": "Мод, який має на меті додати до гри багато нових чудових зомбі-мобів!",
         "image": "https://cdn.modrinth.com/data/5Zusp48B/47a8369c7bc216fdc69e2ab709d5c0a7b9f8e255.jpeg",
         "verified": true,
-        "author": "Команда СУМ, unroman",
+        "author": "СУМ, unroman",
         "completed": true,
-        "Link": "https://modrinth.com/mod/rottencreatures",
+        "link": "https://modrinth.com/mod/rottencreatures",
         "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge або Modrinth",
-        "semiverified": true
+        "semiverified": true,
+        "id": "000011"
     },
     {
         "title": "Nether's Exoticism",
         "description": "Додає 5 екзотичних фруктів, які існують в реальному житті, кожен біом Nether отримує фрукт.",
         "image": "https://cdn.modrinth.com/data/3e4LaIlU/37235ed4c98620770a66e50018669b6bdfa00388.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000012"
     },
     {
         "title": "Nether's Delight",
         "description": "Використовуючи передові мисливські техніки та кулінарні навички, ви зможете приготувати безліч огидних страв і покритих мохом закусок, і навіть трохи довше прожити в Незері!",
         "image": "https://cdn.modrinth.com/data/Vv0RM7WN/bcc7b753ece2584ea956888971a98dc7f3045319.png",
-        "verified": false,
-        "author": "",
+        "verified": true,
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000013"
     },
     {
         "title": "Nether's Cruelty",
         "description": "Nether's Cruelty - це невеликий аддон до Nether's Exotism, який додає нову їжу в мод. Єдина зміна, яку додає цей мод - це нова їжа, Стейк Молоха, який грабують 2 з 3 Молохів (мобів, доданих у Nether's Exoticism).",
         "image": "https://media.forgecdn.net/avatars/614/184/637997323156423195.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000014"
     },
     {
         "title": "The One Probe",
-        "description": "TOP, альтернатива WAILA, яка показує інформацію про те, на що ви дивитеся (істоти, блоки, предмети)",
+        "description": "TOP, альтернівапатива WAILA, яка показує інформацію про те, на що ви дивитеся (істоти, блоки, предмети)",
         "image": "https://cdn.modrinth.com/data/Eyw0UxEx/ca066fbe30ebf9357896ae53711b86460159aedf.png",
-        "verified": false,
-        "author": "",
+        "verified": true,
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000015"
     },
     {
         "title": "Storage Drawers",
         "description": "Ящики для зберігання запозичили ідеї від Jabba та Bibliocraft, що дозволило створити високофункціональне, компактне та естетичне рішення для зберігання.",
         "image": "https://media.forgecdn.net/avatars/10/842/635468327818431130.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000016"
     },
     {
         "title": "Applied Energistics 2",
         "description": "Applied Energistics 2 (AE2) - це комплексний мод для Minecraft, який представляє унікальний підхід до управління внутрішньоігровими запасами.",
         "image": "https://i.ibb.co/Brq3L82/controller.png",
         "verified": true,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/ae2"
+        "link": "https://modrinth.com/mod/ae2",
+        "id": "000017"
     },
     {
         "title": "Bartering Station",
         "description": "Станція обміну додає один абсолютно новий блок утиліти: Покладіть туди всі свої золоті злитки, і вони будуть віддані свиням у цьому районі. Все добро, яке вони повернуть, буде автоматично зібрано в блоці станції.",
         "image": "https://cdn.modrinth.com/data/EOig9U0j/320cbe8a7409ef0b4928ee174b32b70860eb44a1.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/bartering-station"
+        "link": "https://modrinth.com/mod/bartering-station",
+        "id": "000018"
     },
     {
         "title": "Chunk Loaders",
         "description": "Мод на простий завантажувач чанків, маж декілька різних рівнів, можна обрати який саме чанк завантажити інтерфейсом мапи в блоці.",
         "image": "https://cdn.modrinth.com/data/t1VgucWo/icon.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/chunk-loaders"
+        "link": "https://modrinth.com/mod/chunk-loaders",
+        "id": "000019"
     },
     {
         "title": "Catalogue",
         "description": "Порт оригінального мода, але модифікований та адаптований спеціально для Fabric. Каталог містить меню, яке відображає список усіх встановлених модифікацій, до якого можна отримати доступ з головного меню або з гри. ",
         "image": "https://media.forgecdn.net/avatars/871/331/638288815121260754.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000020"
     },
     {
         "title": "Magnum Torch",
         "description": "Магнітний смолоскип додає три види дуже потужних смолоскипів, які не дають мобам нереститися на величезній території. Запобігатимуться лише природні нерестилища, тому, наприклад, нерестилища та рейди все ще працюватимуть, як і раніше.",
         "image": "https://media.forgecdn.net/avatars/511/74/637828965575792853.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/magnum-torch"
+        "link": "https://modrinth.com/mod/magnum-torch",
+        "id": "000021"
     },
     {
         "title": "Create : Misc & Things",
         "description": "додає корисні, будівельні та веселі дрібнички, які чудово вписуються візуально до моду Create.",
         "image": "https://media.forgecdn.net/avatars/873/437/638293470247022480.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000022"
     },
     {
         "title": "Create Central Kitchen",
         "description": "мод, який пропонує більше інструментів та методів для автоматизації приготування їжі для інших модів у Create. ",
         "image": "https://media.forgecdn.net/avatars/770/583/638109213062028041.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000023"
     },
     {
         "title": "Create Enchantment Industry",
         "description": "Дозволяє зберігати та перевозити досвід у вигляді рідини, розчаровувати предмети, копіювати писану книгу або зачаровану книгу, бірку з іменем та розклад поїздів, отримувати зачарування, рівень якого вищий за ліміт рівня.",
         "image": "https://cdn.modrinth.com/data/JWGBpFUP/2c7a4f88e8a5ec9a7cc85578b3ab4b00b194518e.png",
         "verified": true,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000024"
     },
     {
         "title": "Create Slice & Dice",
         "description": "Додає різноманітні функції для забезпечення кращої сумісності між Farmer's Delight та Create. Хоча він призначений для роботи з Farmer's Delight, він працює і без нього, а також додає деякі функції сумісності з іншими модами.",
         "image": "https://cdn.modrinth.com/data/GmjmRQ0A/9af7f38727e4c1dc30c67fefd80b15000a2b8c07.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000025"
     },
     {
         "title": "Create Stuff & Additions",
         "description": "Додає нове обладнання, інструменти та гаджети, які підвищують ваші фізичні здібності та дають нові способи руху. Вам знадобляться різні види палива, такі як пар, теплова енергія або гідравлічна енергія, залежно від типу вашого обладнання. Цей мод також додає багато рецептів, які роблять деякі предмети гри створюваними за допомогою нових способів.",
         "image": "https://cdn.modrinth.com/data/aq9qUUQG/d2ca5daa0a97d343afc67d273f3b5f6eeac2ba52.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000026"
     },
     {
         "title": "Create: Crystal Clear",
         "description": "Мод, який додає скляні рамки до Create. Щоб створити оболонки, просто клацніть правою кнопкою миші на відповідні оболонки з обрамленим склом.",
         "image": "https://cdn.modrinth.com/data/h7QgiH72/5acf81af633b388442b1f6ced9ad4e0f865ce12a.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000027"
     },
     {
         "title": "Cultural Delights",
         "description": "Мод додає до асортименту страв із різних країн світу та нові культурні враження. У меню з’явилася кукурудза, авокадо та огірки.",
         "image": "https://media.forgecdn.net/avatars/523/974/637844697378782554.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000028"
     },
     {
         "title": "Configured",
         "description": "Простий і легкий мод, який динамічно створює меню конфігурації для кожного мода. Раніше модифікації використовували вбудовану систему графічного інтерфейсу Forge, яка більше не існує у нових версіях. Цей мод має на меті відновити цю систему і створити свіжий досвід з оновленим простим у використанні інтерфейсом. ",
         "image": "https://media.forgecdn.net/avatars/871/317/638288810833209348.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://www.curseforge.com/minecraft/mc-mods/configured"
+        "link": "https://www.curseforge.com/minecraft/mc-mods/configured",
+        "id": "000029"
     },
     {
         "title": "Farmer's Respite",
         "description": "Farmer's Respite - це аддон-мод для Farmer's Delight, в основі якого лежить додавання механіки заварювання чаю! ",
         "image": "https://media.forgecdn.net/avatars/460/721/637739148850316506.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000030"
     },
     {
         "title": "Crafting Station",
         "description": "Цей мод додає лише станцію ремесла від Tinker's з можливістю забрати\\класти предмети в прилеглі інвентарі.",
         "image": "https://media.forgecdn.net/avatars/198/38/636896970532934136.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://www.curseforge.com/minecraft/mc-mods/crafting-station"
+        "link": "https://www.curseforge.com/minecraft/mc-mods/crafting-station",
+        "id": "000031"
     },
     {
         "title": "It Takes a Pillage",
         "description": "Мародери розширили свою Цивілізацію! Вони створили табори та фортеці по всьому світу! Чи є у вас те, що потрібно, щоб подолати ці нові загрози та захопити їхню дорогоцінну здобич?",
         "image": "https://media.forgecdn.net/avatars/561/769/637914383465201197.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000032"
     },
     {
         "title": "More Villagers",
         "description": "Вам коли-небудь набридали майнкрафтівські селяни? Хочете, щоб вони продавали більше корисних речей? More Villagers має на меті виправити цю проблему, додавши кілька нових робочих місць для селян, з унікальними професіями, робочими місцями та покращеннями!",
         "image": "https://media.forgecdn.net/avatars/386/555/637575570334274568.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000033"
     },
     {
         "title": "FTB Quests",
@@ -305,7 +338,8 @@
         "verified": false,
         "author": "CakesTwix, ICHTLAY",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000034"
     },
     {
         "title": "FTB Chunks",
@@ -314,7 +348,8 @@
         "verified": false,
         "author": "CakesTwix, ICHTLAY",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000035"
     },
     {
         "title": "FTB Teams",
@@ -323,7 +358,8 @@
         "verified": false,
         "author": "CakesTwix, ICHTLAY",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000036"
     },
     {
         "title": "Refined Storage",
@@ -332,378 +368,420 @@
         "verified": false,
         "author": "CakesTwix, ICHTLAY",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000037"
     },
     {
         "title": "Building Gadgets",
         "description": "Іноді будівництво великих споруд може бути трохи нудним і забирати багато сил. Знаєте, не всі з нас великі будівельники! Dire's Building Gadgets має на меті зробити будівництво трохи простішим.",
         "image": "https://media.forgecdn.net/avatars/161/452/636672128890190531.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000038"
     },
     {
         "title": "Keymap",
         "description": "Цей мод дозволяє вам призначати команди для клавіш, щоб спростити їх використання. Ви можете пов’язати кілька команд з однією клавішею, що дозволяє вам швидко виконувати складні дії.",
         "image": "https://media.forgecdn.net/avatars/565/905/637924187849245090.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/keymap"
+        "link": "https://modrinth.com/mod/keymap",
+        "id": "000039"
     },
     {
         "title": "Crafting Tweaks",
         "description": "Цей мод додає кнопки до багатьох підтримуваних сіток створення(включно з модифікованими), що дозволяють швидко обертати рецепт, відбалансувати або очищати сітку створення.",
         "image": "https://cdn.modrinth.com/data/DMu0oBKf/9f2a32d53d372659e464fd18be6d6c0ba2035b0d.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/crafting-tweaks"
+        "link": "https://modrinth.com/mod/crafting-tweaks",
+        "id": "000040"
     },
     {
         "title": "AE2 Tools",
         "description": "мод, який додає доповнення Tools Complement до AE2 Tools.",
         "image": "https://media.forgecdn.net/avatars/804/765/638171397362772174.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000041"
     },
     {
         "title": "AE2 Additions",
         "description": "Це мод, який додає деякі функції для Applied Energetics 2, які зроблять ваше життя простішим.",
         "image": "https://i.ibb.co/cth4wxg/pattern-provider-3th.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000042"
     },
     {
         "title": "Ae2 Things",
         "description": "Додає більше карток більшого розміру, на яких можна зберігати нескінченно багато інформації ",
         "image": "https://media.forgecdn.net/avatars/475/528/637767573984958255.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/ae2things"
+        "link": "https://modrinth.com/mod/ae2things",
+        "id": "000043"
     },
     {
         "title": "AE2 Wireless Terminal Library",
         "description": "Він оснащений декількома бездротовими терміналами Applied Energistics 2 з підтримкою картки нескінченності, що дозволяє терміналам працювати звідусіль і навіть у різних вимірах.",
         "image": "https://media.forgecdn.net/avatars/368/795/637537459177764432.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://www.curseforge.com/minecraft/mc-mods/ae2wtlib"
+        "link": "https://www.curseforge.com/minecraft/mc-mods/ae2wtlib",
+        "id": "000044"
     },
     {
         "title": "Another Furniture",
         "description": "Прикрашати свій дім стало ще простіше! Another Furniture додає різноманітні меблі, з метою збереження ванільного стилю та послідовних розмірів, враховуючи звичайні блоки та розміри гравців.",
         "image": "https://media.forgecdn.net/avatars/531/947/637854788299840042.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000045"
     },
     {
         "title": "Create Confectionery",
         "description": "Цей мод є доповненням до Create і додає їжу, виготовлену з різних матеріалів. Він додає подрібнене какао, какао-масло, какао-порошок, білий шоколад, чорний шоколад, карамель, шоколадні цукерки, зефір...",
         "image": "https://media.forgecdn.net/avatars/798/624/638160519853126907.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000046"
     },
     {
         "title": "Energy Meter",
         "description": "Він додає простий блок, який можна використовувати для вимірювання швидкості передачі енергії. Він має екран, на якому завжди відображається поточна швидкість, щоб ви завжди були в курсі.",
         "image": "https://cdn.modrinth.com/data/MbejSZ2E/9c4e54c297ec9e68a25fecc99848266d43ff9909.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000047"
     },
     {
         "title": "Integrated Dungeons and Structures",
         "description": "Додає дуже деталізовані структури, використовуючи блоки та мобів з Quark, Alex's Mobs та Create та можливістю інтеграції з багатьма іншими модами.",
         "image": "https://media.forgecdn.net/avatars/532/548/637856256123510936.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000048"
     },
     {
         "title": "Immersive Posts",
         "description": "Простіше кажучи, цей мод дозволяє вам мати дуже високі стовпи з різними типами на вибір, а не лише з обробленого дерева, алюмінію та сталі.",
         "image": "https://cdn.modrinth.com/data/UXrbgsTE/icon.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/immersiveposts"
+        "link": "https://modrinth.com/mod/immersiveposts",
+        "id": "000049"
     },
     {
         "title": "Item Locks",
         "description": "ItemLocks дозволяє вам заблокувати слоти для предметів у вашому інвентарі, щоб ви не могли переміщати предмети мимоволі.",
         "image": "https://cdn.modrinth.com/data/tJzrFuyy/44ebf30cca22d764ffffd3428bc7613e58e7a69f.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000050"
     },
     {
         "title": "Ma Enchants",
         "description": "Додає нові зачарування для мечів, обладунків, луків чи інструментів.",
         "image": "https://media.forgecdn.net/avatars/283/664/637294078643740683.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000051"
     },
     {
         "title": "Patchouli",
         "description": "Мод, який має на меті надати просту у впровадженні документацію, засновану на даних, як для minecraft-модерів, так і для виробників модпаків.",
         "image": "https://cdn.modrinth.com/data/nU0bVIaL/130922464c30a3a61eb493ce71d2502b23f29905.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000052"
     },
     {
         "title": "Sophisticated Backpacks",
         "description": "Ще один мод для рюкзаків, цього разу з рюкзаком, який ви можете розміщувати у світі, розфарбовувати у різні кольорові комбінації, покращувати.",
         "image": "https://media.forgecdn.net/avatars/375/56/637549610342642859.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks"
+        "link": "https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks",
+        "id": "000053"
     },
     {
         "title": "Tesseract",
         "description": "Тессеракт дозволяє транспортувати предмети, рідину та енергію. Тессеракти працюють на будь-якій відстані і навіть у різних вимірах! Використовуйте кілька каналів, щоб мати різні групи Тессерактів!",
         "image": "https://i.ibb.co/4MqXLNs/off.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000054"
     },
     {
         "title": "Trading Post",
         "description": "Додає один простий блок, який при використанні дозволяє торгувати з усіма жителями села в конфігурованій області одночасно. Таблиця виглядає дуже вигадливо і включає в себе симпатичну анімацію!",
         "image": "https://i.ibb.co/6s90dKc/trading-post-top.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/trading-post"
+        "link": "https://modrinth.com/mod/trading-post",
+        "id": "000055"
     },
     {
         "title": "Trashcans",
         "description": "Додає сміттєві баки, які можна використовувати для знищення предметів, рідин та енергії! Предмети та рідини можна заносити до білого або чорного списку, а також встановлювати ліміт передачі енергії!",
         "image": "https://cdn.modrinth.com/data/4QrnfueM/icon.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/trash-cans"
+        "link": "https://modrinth.com/mod/trash-cans",
+        "id": "000056"
     },
     {
         "title": "Create Deco",
         "description": "Додає кілька нових типів декоративних блоків, які використовують переваги палітри та виробничих можливостей Create.",
         "image": "https://media.forgecdn.net/avatars/412/231/637631343026186429.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000057"
     },
     {
         "title": "Terrestria",
         "description": "Terrestria покращує ігровий процес завдяки додаванню 17 основних біомів, які підтримуються 24 складовими біомами, 9 нових типів деревини, а також широкого вибору листя, що надає новий широкий вибір ландшафтів, які освіжають гру.",
         "image": "https://cdn.modrinth.com/data/lsUDPMOT/icon.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000058"
     },
     {
         "title": "Advanced Reborn",
         "description": "Додає різні машини, панелі, батареї та інші предмети для гри Minecraft. Він дозволяє гравцям збирати ресурси, обробляти матеріали та просуватися в грі з модом Tech Reborn.",
         "image": "https://cdn.modrinth.com/data/ir8okcEA/829f9bcf15d3b96c471c6afe14bfe9e6c6b68972.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000059"
     },
     {
         "title": "Kibe",
         "description": "Додає купу випадкових і здебільшого неоригінальних речей.",
         "image": "https://cdn.modrinth.com/data/OvlwmUdC/icon.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000060"
     },
     {
         "title": "Gliders",
         "description": "Це перший мод для вашого дружнього до ванльних модпаків, розроблений для покращення пригодницького та дослідницького аспекту Minecraft.",
         "image": "https://media.forgecdn.net/avatars/843/900/638240619391807565.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000061"
     },
     {
         "title": "Simple Voice Radio",
         "description": "Цей мод додає просте радіо, яке ви можете використовувати для спілкування з друзями, які знаходяться далеко! Утримуючи праву кнопку миші на радіо, ви будете передавати свій голос іншим гравцям, з якими перебуваєте в одній групі.",
-        "image": "https://cdn.modrinth.com/data/S7b8mMXS/e9a84b787b8344c3aa90321125ebb3489c511f85.png",
+        "image": "https://media.forgecdn.net/avatars/769/518/638107034230243911.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000062"
     },
     {
         "title": "Fabric Seasons: Extras",
         "description": "Fabric Seasons сам по собі не додає жодних предметів чи блоків, тому якщо ви хочете отримати повний досвід, вам знадобиться цей мод.",
         "image": "https://cdn.modrinth.com/data/64FYdx5z/472d8a2341cb8f65588420019a7667008cc90e33.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000063"
     },
     {
         "title": "Artifacts",
         "description": "Має на меті зробити дослідження більш корисним, додаючи різні потужні предмети, які не можна виготовити.",
         "image": "https://cdn.modrinth.com/data/P0Mu4wcQ/icon.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "",
+        "link": "",
         "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge та Modrinth",
-        "semiverified": true
+        "semiverified": true,
+        "id": "000064"
     },
     {
         "title": "Naturalist",
         "description": "Ви коли-небудь хотіли по-справжньому захоплюючий мод з тваринами, де вони реалістично взаємодіють один з одним? Цей мод додає у гру більше тварин, які поводяться так само, як і в реальному житті.",
         "image": "https://cdn.modrinth.com/data/F8BQNPWX/bbc2199861f44c2027abb411d53bfceb683fea92.gif",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000065"
     },
     {
         "title": "Fabric Seasons",
         "description": "Простий мод, який додає пори року в гру, динамічно змінюючи біоми під час гри.",
         "image": "https://cdn.modrinth.com/data/KJe6y9Eu/7ce47fcb4242493ad069789298400b14f27737ad.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000066"
     },
     {
         "title": "SeasonHUD",
         "description": "Це аддон для FabricSeasons, який відображає поточну пору року на HUD або під міні-мапою(Xaero's Minimap, JourneyMap, FTBChunks)",
         "image": "https://i.ibb.co/QN90w9q/autumn.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000067"
     },
     {
         "title": "Tiered",
         "description": "Кожен інструмент, зброя та обладунки, які ви виготовляєте, матимуть спеціальний модифікатор, який надає додаткові бонуси до статів та здібностей.",
         "image": "https://cdn.modrinth.com/data/fQL9oTmq/eac8f0456ff42af60eaf503e996a98f6107b0dee.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/tieredz"
+        "link": "https://modrinth.com/mod/tieredz",
+        "id": "000068"
     },
     {
         "title": "Pure Copper Tools",
         "description": "Унікальний погляд на мідні обладунки та інструменти, які якраз можуть відповідати вашому настрою.",
         "image": "https://cdn.modrinth.com/data/hUL2cjNA/c919c5040d0cab8ef53e4e002cbe3e440d17b2c7.gif",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000069"
     },
     {
         "title": "Paladins & Priests (RPG Series)",
         "description": "✨ Захищайте та зцілюйте своїх друзів як Паладин або Священик",
         "image": "https://cdn.modrinth.com/data/FxXkHaLe/158f5452de05883ff8ded4f8ea1af2bb45284b4b.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000070"
     },
     {
         "title": "Numismatic Overhaul",
         "description": "Додає нову валютну систему до Minecraft. У вашому інвентарі є гаманець, в якому зберігаються ваші багатства - їх можна отримати, вбиваючи мародерів, досліджуючи світ і його стародавні руїни і, звичайно ж, торгуючи з селянами.",
         "image": "https://cdn.modrinth.com/data/ZXm8hVxN/icon.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000071"
     },
     {
         "title": "Cosmetic Nametags",
         "description": "додає слот для ярликів/бірок до Trinkers, візуально змінюючи ваше ім'я користувача",
         "image": "https://cdn.modrinth.com/data/SL46MNwR/d6a46de9827ca68c91f360a6fd6d3c35d60d9a0c.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/cosmetic-nametags"
+        "link": "https://modrinth.com/mod/cosmetic-nametags",
+        "id": "000072"
     },
     {
         "title": "Hardcore Revival",
         "description": "Ви коли-небудь грали з друзями в багатокористувацьку гру з гардкором, і раптом ваш товариш помер через дурну помилку, поки ви просто сиділи вдома? Зазвичай вам доводилося перезавантажувати гру, навіть якщо ви не зробили нічого поганого, але цей мод змінює це.",
         "image": "https://cdn.modrinth.com/data/HqKoXaXz/icon.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://www.curseforge.com/minecraft/mc-mods/hardcore-revival"
+        "link": "https://www.curseforge.com/minecraft/mc-mods/hardcore-revival",
+        "id": "000073"
     },
     {
         "title": "EnvironmentZ",
         "description": "Додає суворі умови навколишнього середовища в Minecraft. Зберігайте прохолоду в спекотних і тепло в холодних біомів. Ви замерзнете, якщо температура опуститься до 0°C, якщо, звсіно, не захищені від холоду. Та переконайтеся, що не носите броню аби захистилися від спеки, якщо температура надто висока.",
         "image": "https://cdn.modrinth.com/data/TggYmc6t/4bab25a93f9e7f06aa22ff3cf44b8b1c829927d4.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/environmentz"
+        "link": "https://modrinth.com/mod/environmentz",
+        "id": "000074"
     },
     {
         "title": "Cinderscapes",
         "description": "Мод для біомів, що покращеє життя в Незері.",
         "image": "https://cdn.modrinth.com/data/QC4wcUXZ/icon.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000075"
     },
     {
         "title": "Chronopyre",
         "description": "Вночі або під час грози гравці можуть клацнути правою кнопкою миші на запаленому багатті порожньою рукою, щоб почати відпочивати біля нього. Коли достатня кількість гравців відпочине, що визначається звичайним ігровим правилом \"Відсоток сплячих гравців\", хід часу прискориться, перетворивши ніч, яка зазвичай триває 10 хвилин, на 2 хвилини. ",
         "image": "https://cdn.modrinth.com/data/cwSDoWuv/icon.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/chronopyre"
+        "link": "https://modrinth.com/mod/chronopyre",
+        "id": "000076"
     },
     {
         "title": "Block Runner",
         "description": "Заохочує побудову доріжок та доріг, змушуючи вас бігти швидше на певних блоках, таких блоках як тропинка.",
         "image": "https://cdn.modrinth.com/data/1VSGxqkt/icon.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000077"
     },
     {
         "title": "Spell Engine",
         "description": "API(бібліотека з функціями) для інших модів в RPG Series.",
         "image": "https://cdn.modrinth.com/data/XvoWJaA2/9f3d222d82aebadd5325ae53a927463f1e20abd0.png",
         "verified": true,
-        "author": "Команда СУМ, unroman",
+        "author": "СУМ, unroman",
         "completed": true,
-        "Link": "https://modrinth.com/mod/spell-engine"
+        "link": "https://modrinth.com/mod/spell-engine",
+        "id": "000078"
     },
     {
         "title": "Botania",
@@ -712,214 +790,241 @@
         "verified": false,
         "author": "mewnn",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000079"
     },
     {
         "title": "Beautify: Refabricated",
         "description": "Додає безліч ванільних способів урізноманітнити ваші збірки. (хоч переклад і на Fabric версію, має працювати і на Forge версії)",
         "image": "https://cdn.modrinth.com/data/DhSSvaxs/c13d3f6a8ea281ecea904e10daa7d4de7147c22c.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/beautify-refabricated"
+        "link": "https://modrinth.com/mod/beautify-refabricated",
+        "id": "000080"
     },
     {
         "title": "Backpacked",
         "description": "Це не просто ще один мод для рюкзаків. Окрім того, що ви очікуєте від мода, він додає цікавий ігровий досвід завдяки таким нововведенням, як випробування. Проходження випробувань сприяє кастомізації рюкзаків - новій системі, яка дозволяє гравцям персоналізувати свій рюкзак за допомогою різних моделей.",
         "image": "https://media.forgecdn.net/avatars/477/479/637772195243234104.gif",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://www.curseforge.com/minecraft/mc-mods/backpacked"
+        "link": "https://www.curseforge.com/minecraft/mc-mods/backpacked",
+        "id": "000081"
     },
     {
         "title": "Item Alchemy",
         "description": "Додайте систему ЕМС на кшталт \"Project E\". Вона може еквівалентно обмінюватися предметами.",
         "image": "https://cdn.modrinth.com/data/cfQx2fbQ/a5c2f8b9be340f50341cbba5fdbed596804052c0.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000082"
     },
     {
         "title": "Tokenable Furnaces and Storage",
         "description": "Додає кілька нових типів скринь, скринь з пастками, бочок, шалкерів, печей, плавильних печей, коптилень та мішочків, які є швидшими та ефективнішими, ніж ванільні аналоги.",
         "image": "https://i.ibb.co/CnN1RYc/amethyst-blast-front.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000083"
     },
     {
         "title": "SkyLib",
         "description": "Ще одна бібліотека для інших модів, її створив SkylorBeck, щоб спростити написання коду.",
         "image": "https://media.forgecdn.net/avatars/416/493/637639014851114232.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000084"
     },
     {
         "title": "Cloth Config API",
         "description": "Бібліотека конфігурацій для модів майнкрафт.",
         "image": "https://cdn.modrinth.com/data/9s6osm5g/icon.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000085"
     },
     {
         "title": "RelicEX",
         "description": "Додає предмети які сумісні з Trinket для атрибутів PlayerEx.",
         "image": "https://cdn.modrinth.com/data/LwwtuiRk/icon.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000086"
     },
     {
         "title": "PlayerEX",
         "description": "Додає атрибути, рівні та очки навичок - на тему RPG.",
         "image": "https://cdn.modrinth.com/data/o5GUN4b1/icon.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000087"
     },
     {
         "title": "MapFrontiers",
         "description": "Це мод-аддон для JourneyMap, який дозволяє розділити мапу на регіони і призначити їм назви та кольори. Така собі сучасна система приватів для серверів.",
         "image": "https://cdn.modrinth.com/data/hWlsli6y/a5402be28e9f488c67b4f86bac18bc3a1856e8de.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000088"
     },
     {
         "title": "WizardsEX",
         "description": "Цей мод має на меті покращити роботу WizardEX у Minecraft, інтегрувавши його з PlayerEX.",
         "image": "https://cdn.modrinth.com/data/nWOFI2Xj/f0b2816e5cb0cffef1fa91c4dbaa52fd9bc0dbb5.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000089"
     },
     {
         "title": "Joy of Painting",
         "description": "Цей мод дозволяє вам створити полотно і палітру, за допомогою яких ви можете малювати власні картини і вішати їх на стіну, як ванільні картини. Дайте волю своїй творчості або малюйте меми і відчуйте радість малювання.",
         "image": "https://cdn.modrinth.com/data/YOs4tZea/d72e8fbb38715ccbdfb23c9e1180fb3736ac0276.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000090"
     },
     {
         "title": "Universal Graves",
         "description": "Це простий, але дійсно настроюваний мод для могили/скрині-смерті! Ви можете налаштувати його як завгодно, змінюючи повідомлення, блоки та тексти голограм, як довго він буде захищений, чи повинен скидати предмети після закінчення терміну дії і т.д.",
         "image": "https://cdn.modrinth.com/data/yn9u3ypm/a933032aa191fdc43cd439074f5713f8351e7af9.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000091"
     },
     {
         "title": "Forgotten Graves",
         "description": "Мод з широкими можливостями налаштування, який додає могилу, що зберігає предмети та досвід після смерті; могила буде руйнуватися через випадкові проміжки часу.",
         "image": "https://cdn.modrinth.com/data/FrZIkosK/914fbe1f142a3fbe7488d0064e252f08f10c4a93.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000092"
     },
     {
         "title": "Charm of undying",
         "description": "Він використовує Curios API або Trinkets API, щоб додати новий слот, до інвентарю гравця і дозволяє помістити тотем безсмертя в цей слот.",
         "image": "https://cdn.modrinth.com/data/b5GyyYkp/5f9c2502f872d94bea7becca36584e364ce8d322.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000093"
     },
     {
         "title": "Expanded Delight",
         "description": "Аддон для Farmer's Delight Fabric, який додає до базового мода ще більше культур та функціональних можливостей.",
         "image": "https://cdn.modrinth.com/data/e9V6wFcR/de44e0f207721eb790ed1f4f5565a59c1d4ce713.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000094"
     },
     {
-        "title": "Spectum",
+        "status": {
+            "status1": "https://badges.crowdin.net/spectrumua/localized.svg"
+        },
+        "title": "Spectrum",
         "description": "Магічний мод, що базується на розвитку та дослідженні, де ви комбінуєте кольори для створення магічних інструментів і машин, з кінцевою метою дізнатися, що лежить під колись непроникною підлогою Bedrock.",
         "image": "https://cdn.modrinth.com/data/3rc31Hgo/70ab94a9c980769dd3f2d17850aef9f6df497ab7.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": false,
-        "Link": ""
+        "link": "",
+        "id": "000095"
     },
     {
         "title": "Charm",
         "description": "Натхненний модом Quark у тому сенсі, що він покликаний покращити ванільний ігровий досвід без шкоди для стилю гри.",
         "image": "https://cdn.modrinth.com/data/pOQTcQmj/icon.jpg",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000096"
     },
     {
         "title": "Wizards (RPG Series)",
         "description": "🧙🏻‍♂️ Знищуйте ворогів за допомогою таємної магії, магії вогню та морозу",
         "image": "https://cdn.modrinth.com/data/NkGaQMDA/affd534063e5388c759a9415988091e9804dce2a.png",
         "verified": true,
-        "author": "Команда СУМ, unroman",
+        "author": "СУМ, unroman",
         "completed": true,
-        "Link": "https://modrinth.com/mod/wizards"
+        "link": "https://modrinth.com/mod/wizards",
+        "id": "000097"
     },
     {
         "title": "Create Crafts & Additions",
         "description": "Розширює можливості Create і діє як міст між електрикою та кінетичною енергією з Create, додаючи електродвигун, який генерує кінетичну енергію, та генератор, який робить протилежний процес з ефективністю 75%.",
         "image": "https://media.forgecdn.net/avatars/405/250/637616939209778882.png",
         "verified": true,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://www.curseforge.com/minecraft/mc-mods/createaddition"
+        "link": "https://www.curseforge.com/minecraft/mc-mods/createaddition",
+        "id": "000098"
     },
     {
         "title": "Ender Storage",
         "description": "Ці скрині з'єднуються між собою на основі відповідних кольорових візерунків. Всі скрині з кнопками одного кольору мають спільний інвентар. Для доступу до скринь також можна забарвити сумки Ендера, що дасть вам портативне рішення питання \"Як мені отримати доступ до речей на базі, коли мене там немає?\".",
         "image": "https://media.forgecdn.net/avatars/133/874/636487132065959761.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000099"
     },
     {
         "title": "Simple Storage Network",
         "description": "Проста система зберігання на ванільних скринях",
         "image": "https://media.forgecdn.net/avatars/100/305/636314361904813513.png",
         "verified": true,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://www.curseforge.com/minecraft/mc-mods/simple-storage-network"
+        "link": "https://www.curseforge.com/minecraft/mc-mods/simple-storage-network",
+        "id": "000100"
     },
     {
         "title": "Tool's Complement",
         "description": "Додає набори обладунків та інструментів на основі модифікованих металів.",
         "image": "https://cdn.modrinth.com/data/zTaQC7Hx/icon.png",
         "verified": true,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/tools-complement"
+        "link": "https://modrinth.com/mod/tools-complement",
+        "id": "000101"
     },
     {
         "title": "Overworld Quartz ore",
         "description": "Додає кварцову руду в верхній світ.",
         "image": "https://cdn.modrinth.com/data/QUssy0TY/51e1e48718df8f9709f3eaff4d11725423f633a3.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000102"
     },
     {
         "title": "Create",
@@ -928,211 +1033,243 @@
         "verified": true,
         "author": "Tapio, MartianDill, Eric_Mensy, Dasventur, Koto Fickus",
         "completed": true,
-        "Link": "https://modrinth.com/mod/create-fabric"
+        "link": "https://modrinth.com/mod/create-fabric",
+        "id": "000103"
     },
     {
         "title": "Create: Steam 'n' Rails",
         "description": "Додає більше контенту в Create - залізниця чудовий інструмент для транспортування ваших ресурсів або створення мегабура який викопає вам весь чанк.",
         "image": "https://cdn.modrinth.com/data/ZzjhlDgM/23d42e3d1c878cb77f9e74a3f78fed2d011ed937.png",
         "verified": true,
-        "author": "Команда СУМ, MartianDill, Eugene Hordei",
+        "author": "СУМ, MartianDill, Eugene Hordei, Isengrimus",
         "completed": true,
-        "Link": "https://modrinth.com/mod/create-steam-n-rails"
+        "link": "https://modrinth.com/mod/create-steam-n-rails",
+        "id": "000104"
     },
     {
         "title": "Presence Footsteps",
         "description": "Мод на звуки ходьби, це все...",
         "image": "https://cdn.modrinth.com/data/rcTfTZr3/icon.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": null
+        "link": null,
+        "id": "000105"
     },
     {
         "title": "Sprint O' Meter",
         "description": "Широко налаштовувана система витривалості.",
         "image": "https://cdn.modrinth.com/data/exveatcq/icon.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": null
+        "link": null,
+        "id": "000106"
     },
     {
         "title": "Your Reputation",
         "description": "Плагін WTHIT/Jade, який відображає вашу репутацію у підказці з кожним селянином.",
         "image": "https://cdn.modrinth.com/data/MrLyhFlg/89f913657af93613aab2d1c8fe92ea4dee947746.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": null
+        "link": null,
+        "id": "000107"
     },
     {
         "title": "More Banner Features",
         "description": "Додано багато нових крутих функцій для стягів.",
         "image": "https://cdn.modrinth.com/data/FOaR4sIZ/e9747b0a53bcfac270fec714ddcb18252f44ce5f.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": null
+        "link": null,
+        "id": "000108"
     },
     {
         "title": "MC Dungeons Armors",
         "description": "Ви коли-небудь хотіли мати обладунки з Minecraft Dungeons у своєму світі Minecraft? Ну, тепер це можливо! MC Dungeons Armors [MCDA] має на меті (з часом) перенести всі ці обладунки, і навіть більше, з Minecraft Dungeons до Minecraft.",
         "image": "https://media.forgecdn.net/avatars/338/757/637478036163612181.png",
         "verified": true,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/mcda"
+        "link": "https://modrinth.com/mod/mcda",
+        "id": "000109"
     },
     {
         "title": "MC Dungeons Enchanting",
         "description": "Тепер, з існуванням модів MC Dungeons Weapons та MC Dungeons Armor для Fabric, єдиною складовою, якої бракує для розширення можливостей спорядження в Minecraft Dungeons, є унікальна система зачарування. Що ж, MC Dungeons Enchanting додає цю систему в Minecraft Java!",
         "image": "https://cdn.modrinth.com/data/iwkcspV8/d8d859f66af46006ee01ddce0e5e6d0e4831bfc1.png",
         "verified": true,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": null,
+        "link": null,
         "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge або Modrinth",
-        "semiverified": true
+        "semiverified": true,
+        "id": "000110"
     },
     {
         "title": "Mana Visualizer",
         "description": "Простий мод, додає в Ботанію відображення кількості мани в басейнах.",
         "image": "https://cdn.modrinth.com/data/YcdpjV3k/c03e83fed475339350fe326797c2bcd1d0c406b8.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/mana-visualizer"
+        "link": "https://modrinth.com/mod/mana-visualizer",
+        "id": "000111"
     },
     {
         "title": "Guarding",
         "description": "Простий мод для Fabric, який додає нові функції до щитів, щоб зробити їх більш довершеними.",
         "image": "https://cdn.modrinth.com/data/aV1COQ7a/06f546fee278185cbd142b93ca7e60feed017020.png",
         "verified": true,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": null
+        "link": null,
+        "id": "000112"
     },
     {
         "title": "Fabric Shield Lib",
         "description": "Додає щитам можливість зачарування, а також є чудовим інструментом, за допомогою якого модороби можуть легко додавати нові щити та зачарування для щитів!",
         "image": "https://cdn.modrinth.com/data/7SDalH12/icon.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": null
+        "link": null,
+        "id": "000113"
     },
     {
         "title": "Expanded copper",
         "description": "Додає більше \"м'яких\" до ваніли застосувань для міді.",
         "image": "https://cdn.modrinth.com/data/kJ08cVvv/42b268e6f31ace5bcd9c1691e59f1f98fc6fa9d4.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": null
+        "link": null,
+        "id": "000114"
     },
     {
         "title": "Equipment Compare",
         "description": "Порівняння екіпірованих інструментів, зброї та обладунків.",
         "image": "https://media.forgecdn.net/avatars/476/686/637770200277803086.png",
         "verified": false,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": ""
+        "link": "",
+        "id": "000115"
     },
     {
         "title": "Echo Chest",
         "description": "Додає абсолютно новий тип скрині! Працює як звичайна скриня, але з родзинкою: будь-які предмети, що падають поблизу (в радіусі 8 блоків), будуть швидко зібрані скринею. ",
         "image": "https://cdn.modrinth.com/data/m3pkVbY8/b873e18b049ca60825ba62cfde75568e93ff6193.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": null
+        "link": null,
+        "id": "000116"
     },
     {
         "title": "Dark Waters",
         "description": " Він додає нових мобів, які з'являються лише під час штормів в океані.  У штормах є щось приховане, і воно наближається.  Якщо ви почуєте грім.... вже занадто пізно.",
         "image": "https://cdn.modrinth.com/data/pe7gyI14/icon.png",
         "verified": true,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": null
+        "link": null,
+        "id": "000117"
     },
     {
+        "status": {
+            "status1": "https://badges.crowdin.net/spectrumua/localized.svg"
+        },
         "title": "Deeper and Darker",
         "description": "Більше блоків, предметів, обладунків і прихованих таємниць, що доповнюють новий біом Deep Dark.",
         "image": "https://cdn.modrinth.com/data/fnAffV0n/cbcb38cd738e0b0d1c4b583d5bfb56838a4b101d.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": false,
-        "Link": null
+        "link": null,
+        "id": "000118"
     },
     {
+        "status": {
+            "status1": "https://badges.crowdin.net/spectrumua/localized.svg"
+        },
         "title": "Improved End",
         "description": "Мод, який додає тонни нових блоків, біомів та мобів до Енду.",
         "image": "https://cdn.modrinth.com/data/1qFhISD7/df7dcb73db634df5508b348ae129312129f06f1a.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": false,
-        "Link": null
+        "link": null,
+        "id": "000119"
     },
     {
         "title": "Critters and Companions",
         "description": "Додає кілька нових милих друзів у ваш світ!",
         "image": "https://cdn.modrinth.com/data/Yd4wb5wZ/23a98a43d2f494e58da746ad00ff7bcffa3b36d2.png",
         "verified": true,
-        "author": "Команда СУМ, unroman, mewnn",
+        "author": "СУМ, unroman, mewnn",
         "completed": true,
-        "Link": null,
+        "link": null,
         "tooltip": "Окрім нашого перекладу ще є офіційний від unroman та mewnn, можна знайти на Curse Forge або Modrinth",
-        "semiverified": true
+        "semiverified": true,
+        "id": "000120"
     },
     {
         "title": "Jewelry (RPG Series)",
         "description": "Ще один з модів RPG Series, додає декілька різних типів, ювелірних прикрас з різними покращеннями гравця.",
         "image": "https://cdn.modrinth.com/data/sNJAIjUm/7222c935fe80cdee63617b79427736e5616f2512.png",
         "verified": true,
-        "author": "Команда СУМ",
+        "author": "СУМ",
         "completed": true,
-        "Link": "https://modrinth.com/mod/jewelry"
+        "link": "https://modrinth.com/mod/jewelry",
+        "id": "000121"
     },
     {
         "title": "Cosmetic Armor",
         "description": "До слотів Trinkets додається ще один – косметична броня, дуже цікава у використанні механіка, можна разом носити гарну броню і міцну.",
         "image": "https://media.forgecdn.net/avatars/332/317/637463248304263412.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": null
+        "link": null,
+        "id": "000122"
     },
     {
         "title": "Better Combat",
         "description": "⚔️ Легка, видовищна та весела система ближнього бою від Minecraft Dungeons.",
         "image": "https://cdn.modrinth.com/data/5sy6g3kz/icon.png",
         "verified": true,
-        "author": "Команда СУМ, unroman",
+        "author": "СУМ, unroman",
         "completed": true,
-        "Link": null,
+        "link": null,
         "tooltip": "Окрім нашого перекладу ще є офіційний від unroman, можна знайти на Curse Forge або Modrinth",
-        "semiverified": true
+        "semiverified": true,
+        "id": "000123"
     },
     {
+        "status": {
+            "status1": "https://badges.crowdin.net/spectrumua/localized.svg"
+        },
         "title": "MC Dungeons Weapons",
         "description": "Ви коли-небудь хотіли мати зброю з підземель Minecraft у своєму світі Minecraft? Що ж, тепер це можливо! MC Dungeons Weapons (MCDW) має на меті (з часом) перенести всю цю зброю, і навіть більше, з Minecraft Dungeons до Minecraft.",
         "image": "https://media.forgecdn.net/avatars/308/444/637391793275773439.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": false,
-        "Link": null
+        "link": null,
+        "id": "000124"
     },
     {
         "title": "Projectile Damage Attribute",
         "description": "Додає новий атрибут до луків та інших предметів які можуть метати снаряди.",
         "image": "https://cdn.modrinth.com/data/AOyJhFvl/c28de9e969cab71d086e66b89a104ee019f0a6fb.png",
         "verified": false,
-        "author": "",
+        "author": "СУМ",
         "completed": true,
-        "Link": null
+        "link": null,
+        "id": "000125"
     },
     {
         "title": "Alex's Caves",
@@ -1141,6 +1278,17 @@
         "verified": false,
         "author": "moralniy, InertFall",
         "completed": true,
-        "Link": null
+        "link": null,
+        "id": "000126"
+    },
+    {
+        "title": "Tinkers' Levelling Addon",
+        "description": "Цей аддон додає один новий модифікатор для інструментів та обладунків - рівні покращення. На відміну від оригінального аддону, рівень інструментів не доступне з самого початку і повинно застосовуватися до кожного предмета спорядження окремо.",
+        "image": "https://media.forgecdn.net/avatars/646/14/638046711047330737.png",
+        "verified": false,
+        "author": "Ymna_ytka",
+        "completed": true,
+        "link": null,
+        "id": "000127"
     }
 ]
