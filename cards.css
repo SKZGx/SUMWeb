@@ -117,8 +117,8 @@ h2 {
   padding: 30px 5px;
   background-color: #26292f;
   border-radius: 0.5rem;
-  width: 320px;
-  min-width: 320px;
+  width: 220px;
+  min-width: 220px;
   display: flex;
   flex-direction: column;
   color: #b0bac5;
@@ -146,7 +146,7 @@ p {
 }
 
 .CardsContainer {
-  max-width: 1400px;
+  max-width: 1520px;
   min-height: 850px;
   display: flex;
   align-items: center;
