@@ -28,16 +28,58 @@
     background-color: #26292f;
     border-radius: 0.5rem;
     padding: 1rem;
-    max-width: 864px;
+    width: 864px;
+    max-width: 90%;
     align-items: flex-start;
+    flex-direction: column;
 }
 
 .ItemImageContainer{
     margin-right: 15px;
+    
 }
 
 .ItemTextContainer {
     gap: 5px;
     display: flex;
     flex-direction: column;
+}
+
+.tooltip{
+    padding: 20px;
+    background-color: hsla(179, 51%, 33%, 0.205);
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Roboto, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    color: #ecf9fb;
+    font-weight: 500;
+    text-align: center;
+    width: 432px;
+}
+
+.TextImageContainer{
+    display: flex;
+}
+
+.tooltipContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+
+.ItemIcon {
+    width: 46px;
+    height: 46px;
+}
+
+
+.ItemIcon {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }

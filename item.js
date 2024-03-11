@@ -30,6 +30,65 @@ $(document).ready(() => {
         }
     }
 
+    // Function to get icon data from Icons.json
+function getIconData(statusClass) {
+    // Replace this with the actual path to your Icons.json file
+    const iconsJsonPath = 'icons.json';
+
+    // Return a Promise for fetching and processing the icon data
+    return fetch(iconsJsonPath)
+        .then(response => response.json())
+        .then(iconData => iconData[statusClass] || {})
+        .catch(error => {
+            console.error('Error fetching icon data:', error);
+            return {};
+        });
+}
+
+
+    function getModIcon(mod) {
+        if (mod.completed === false) {
+            return 'completed';
+        } else if (mod.semiverified === true) {
+            return 'semiverified';
+        } else if (mod.verified === true) {
+            return 'verified';
+        }
+        // Return an empty string if none of the conditions match
+        return '';
+    }
+
+    // Function to apply styles based on modIcon
+function applyIconStyles(modIcon) {
+    const itemIconElement = $('#itemicon');
+
+    // Remove existing icon styles
+    itemIconElement.removeClass('statusicon completedIcon semiverifiedIcon verifiedIcon');
+
+    // Add styles based on modIcon
+    if (modIcon) {
+        // Use addIcon function to add the icon dynamically
+        addIcon(itemIconElement[0], modIcon);
+    }
+}
+
+
+// Function to add icons based on status
+function addIcon(element, type) {
+    const iconContainer = document.createElement('div');
+
+    // Use Promise to get icon data
+    getIconData(type).then(iconData => {
+        if (iconData.icon) {
+            iconContainer.style.backgroundImage = `url('${iconData.icon}')`;
+            iconContainer.classList.add(`statusicon`, `${type}Icon`);
+            element.appendChild(iconContainer);
+        }
+    });
+}
+
+    
+
     // Function to update the item page with the fetched data
     async function updateItemPage() {
         try {
@@ -39,16 +98,33 @@ $(document).ready(() => {
                 const { selectedItem, modsData, otherData } = await fetchItemData(itemId);
     
                 if (selectedItem) {
+                    // Create HTML string for tooltip content
+                    const tooltipContent = selectedItem.tooltip ? selectedItem.tooltip : (selectedItem.verified ? 'Переклад вже в моді! Завантаження додаткових файлів не потрібно. Насолоджуйтеся грою з українською локалізацією!' : '');
+    
+                    // Create HTML string for tooltip
+                    const tooltipHTML = tooltipContent
+                    ? `<div id="tooltip" class="tooltip">${tooltipContent}</div>`
+                    : '';
+    
+                    // Determine the icon based on mod properties
+                    const modIcon = getModIcon(selectedItem);
+    
                     // Create HTML string for item data
                     const itemHTML = `
                         <div class="ItemContainerInfo">
-                            <div class="ItemImageContainer">
-                                <div class="itemimage" style="background-image: url('${selectedItem.image}');" title="${selectedItem.title} Image" style="max-width: 100%;"></div>
+                            <div class="tooltipContainer">
+                                ${tooltipHTML}
                             </div>
-                            <div class="ItemTextContainer">
-                                <h2 class="itemtitle">${selectedItem.title}</h2>
-                                <p class="itemtranslator">Автори перекладу: ${selectedItem.author}</p>
-                                <p class="itemdescription">${selectedItem.description}</p>
+                            <div class="TextImageContainer">
+                                <div class="ItemImageContainer">
+                                    <div class="itemimage" style="background-image: url('${selectedItem.image}');" title="${selectedItem.title} Image" style="max-width: 100%;"></div>
+                                    <div id="itemicon" class="ItemIcon"></div>
+                                </div>
+                                <div class="ItemTextContainer">
+                                    <h2 class="itemtitle">${selectedItem.title}</h2>
+                                    <p class="itemtranslator">Автори перекладу: ${selectedItem.author}</p>
+                                    <p class="itemdescription">${selectedItem.description}</p>
+                                </div>
                             </div>
                         </div>
                     `;
@@ -58,6 +134,8 @@ $(document).ready(() => {
     
                     // Update the total translation count
                     updateTotalTranslation(modsData, otherData);
+
+                    applyIconStyles(modIcon);
                 } else {
                     console.error(`Item with ID ${itemId} not found.`);
                 }
