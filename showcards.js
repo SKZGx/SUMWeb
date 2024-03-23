@@ -517,10 +517,10 @@ function saveToStorageHandleInitialURLParams() {
     currentPage = parseInt(pageParam);
   }
 
-  if (filterParam) {
+  if (filterParam !== null && filterParam !== '') { // Check if filterParam is not null or empty
     sessionStorage.setItem('selectedFilters', filterParam);
   } else {
-    // Set sessionStorage value to "none" if no filters are specified
+    // If filterParam is null or empty, set sessionStorage to 'none'
     sessionStorage.setItem('selectedFilters', 'none');
   }
 }
@@ -528,8 +528,7 @@ function saveToStorageHandleInitialURLParams() {
 function loadFromStorageHandleInitialURLParams() {
   const filterParam = sessionStorage.getItem('selectedFilters');
 
-  // Skip updating selected filters if sessionStorage value is "none"
-  if (filterParam !== 'none') {
+  if (filterParam && filterParam !== 'none') { // Check if filterParam is not 'none'
     const filters = filterParam.split('%');
     // Update selected filters in the UI
     filters.forEach(filter => {
@@ -550,8 +549,12 @@ function loadFromStorageHandleInitialURLParams() {
         }
       });
     }
+  } else {
+    // If filterParam is 'none' or null, clear the sessionStorage
+    sessionStorage.removeItem('selectedFilters');
   }
 }
+
 
 
 
