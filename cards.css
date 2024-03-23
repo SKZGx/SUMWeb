@@ -114,7 +114,7 @@ h2 {
 
 .filtred {
   margin: 15px;
-  padding: 30px 5px;
+  padding: 30px 15px;
   background-color: #26292f;
   border-radius: 0.5rem;
   width: 220px;
@@ -123,6 +123,12 @@ h2 {
   flex-direction: column;
   color: #b0bac5;
   gap: 0.5rem;
+}
+
+.filter-header{
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Roboto, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 p {
@@ -319,3 +325,8 @@ p {
   margin-left: 5px;
 }
 
+.filters-form{
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}

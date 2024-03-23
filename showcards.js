@@ -9,6 +9,11 @@ let otherData;
 let filteredData;
 
 
+window.addEventListener('load', function() {
+  // Call the applyBurgerMenuStyles function when the page is loaded
+  handleInitialURLParams();
+});
+
 
 // Function to create a card for each mod
 function createModCard(mod) {
@@ -246,6 +251,7 @@ function getUniqueAuthors(mods, other) {
   return allAuthors;
 }
 
+
 // Add this function to update the list of authors in the HTML
 function updateAuthorsList(authors) {
   const authorsContainer = document.querySelector('.AuthorsContainer');
@@ -270,19 +276,46 @@ const filterDisplayNames = {
   NotCompleted: 'У роботі',
 };
 
-// Modify the createFilterInputs function to use filterDisplayNames
+
+
+// Modify the createFilterInputs function to include headers
 function createFilterInputs(authors) {
+  console.log('createFilterInputs function is being called.'); // Add this line for debugging
+  console.log('Authors:', authors);
   const filtersContainer = document.querySelector('.FiltersContainer');
   const filtredContainer = document.querySelector('.filtred');
+  const filtersForm = document.createElement('form'); // Create form element
+  filtersForm.classList.add('filters-form'); // Add class to form
+  filtersForm.id = 'filtersForm'; // Add id to form
 
   const filters = Object.keys(filterDisplayNames);
+
+  // Add headers for Mods/Other and Official/FromMembers/NotCompleted
+  const modsHeader = document.createElement('div');
+  modsHeader.textContent = 'Тип контенту';
+  modsHeader.classList.add('filter-header');
+  filtersForm.appendChild(modsHeader);
+
+  const modsContainer = document.createElement('div');
+  modsContainer.classList.add('mods-container');
+  filtersForm.appendChild(modsContainer);
+
+  const otherContainer = document.createElement('div');
+  otherContainer.classList.add('other-container');
+  filtersForm.appendChild(otherContainer);
+
+  const otherHeader = document.createElement('div');
+  otherHeader.textContent = 'Розширені';
+  otherHeader.classList.add('filter-header');
+  filtersForm.appendChild(otherHeader);
+
 
   filters.forEach(filter => {
     const filterContainer = document.createElement('div');
     filterContainer.classList.add(`${filter.toLowerCase()}`, 'filter');
 
     const input = document.createElement('input');
-    input.type = filter === 'Mods' || filter === 'Other' ? 'radio' : 'checkbox';
+    input.type = filter === 'Mods' || filter === 'Other' ? 'checkbox' : 'checkbox';
     input.name = filter === 'Mods' || filter === 'Other' ? 'modsOrOther' : null;
     input.id = filter.toLowerCase();
     input.value = filter;
@@ -291,13 +324,6 @@ function createFilterInputs(authors) {
     if (filter === 'Mods' || filter === 'Other') {
       input.addEventListener('change', () => handleFilterSelection());
     } else {
-      const urlParams = new URLSearchParams(window.location.search);
-      const filterParam = urlParams.get('filter');
-
-      if (filterParam && filterParam.includes(filter.toLowerCase())) {
-        input.checked = true;
-      }
-
       input.addEventListener('change', () => handleFilterSelection());
     }
 
@@ -308,7 +334,14 @@ function createFilterInputs(authors) {
     filterContainer.appendChild(input);
     filterContainer.appendChild(label);
 
-    filtredContainer.appendChild(filterContainer);
+    // Append filters to respective containers based on Mods/Other
+    if (filter === 'Mods') {
+      modsContainer.appendChild(filterContainer);
+    } else if (filter === 'Other') {
+      otherContainer.appendChild(filterContainer);
+    } else {
+      filtersForm.appendChild(filterContainer); // Append filter container to form
+    }
   });
 
   // Create checkboxes for each unique author
@@ -323,10 +356,28 @@ function createFilterInputs(authors) {
     const authorLabel = document.createElement('label');
     authorLabel.textContent = author;
 
-    filtredContainer.appendChild(authorCheckbox);
-    filtredContainer.appendChild(authorLabel);
+    filtersForm.appendChild(authorCheckbox); // Append author checkbox to form
+    filtersForm.appendChild(authorLabel); // Append author label to form
   });
+
+  filtredContainer.appendChild(filtersForm); // Append form to filtred container
+
+  // Retrieve selected filters from Session Storage and set checkboxes
+  const selectedFilters = sessionStorage.getItem('selectedFilters');
+  if (selectedFilters) {
+    const filters = selectedFilters.split('%');
+    filters.forEach(filter => {
+      const input = document.getElementById(filter);
+      if (input) {
+        input.checked = true;
+      }
+    });
+  }
 }
+
+
+
+
 
 
 
@@ -379,6 +430,36 @@ function updateURL(page) {
 
 
 
+// Function to handle toggling between Mods and Other checkboxes
+function toggleModsOtherCheckbox() {
+  const modsCheckbox = document.querySelector('input[name="modsOrOther"][value="Mods"]');
+  const otherCheckbox = document.querySelector('input[name="modsOrOther"][value="Other"]');
+  
+  // Check if both checkboxes are found before adding event listeners
+  if (modsCheckbox && otherCheckbox) {
+    modsCheckbox.addEventListener('change', () => {
+      if (modsCheckbox.checked) {
+        otherCheckbox.checked = false;
+        handleFilterSelection();
+      }
+    });
+  
+    otherCheckbox.addEventListener('change', () => {
+      if (otherCheckbox.checked) {
+        modsCheckbox.checked = false;
+        handleFilterSelection();
+      }
+    });
+  } else {
+    console.error("Error: Mods or Other checkboxes not found!");
+  }
+}
+
+// Call the toggleModsOtherCheckbox function to set up the event listeners
+
+
+
+
 // Function to handle filter selection
 function handleFilterSelection() {
   const selectedFilters = Array.from(document.querySelectorAll('.filtred input:checked')).map(checkbox => checkbox.value);
@@ -406,6 +487,7 @@ function handleFilterSelection() {
         return true;
       });
     });
+    toggleModsOtherCheckbox();
   }
 
   // Update the displayed cards and page navigation with the filtered data
@@ -416,10 +498,17 @@ function handleFilterSelection() {
   updateURL(currentPage, selectedFilters);
 }
 
+// Call the toggleModsOtherCheckbox function to set up the event listeners
+toggleModsOtherCheckbox();
 
 
-// Function to handle initial URL parameters
-function handleInitialURLParams() {
+
+function handleInitialURLParams (){
+  saveToStorageHandleInitialURLParams();
+  loadFromStorageHandleInitialURLParams();
+}
+
+function saveToStorageHandleInitialURLParams() {
   const urlParams = new URLSearchParams(window.location.search);
   const pageParam = urlParams.get('page');
   const filterParam = urlParams.get('filter');
@@ -429,6 +518,18 @@ function handleInitialURLParams() {
   }
 
   if (filterParam) {
+    sessionStorage.setItem('selectedFilters', filterParam);
+  } else {
+    // Set sessionStorage value to "none" if no filters are specified
+    sessionStorage.setItem('selectedFilters', 'none');
+  }
+}
+
+function loadFromStorageHandleInitialURLParams() {
+  const filterParam = sessionStorage.getItem('selectedFilters');
+
+  // Skip updating selected filters if sessionStorage value is "none"
+  if (filterParam !== 'none') {
     const filters = filterParam.split('%');
     // Update selected filters in the UI
     filters.forEach(filter => {
@@ -437,8 +538,28 @@ function handleInitialURLParams() {
         input.checked = true;
       }
     });
+
+    // Set selected filters in the form with id "filtersForm"
+    const filtersForm = document.getElementById('filtersForm');
+    if (filtersForm) {
+      filters.forEach(filter => {
+        const input = filtersForm.querySelector(`input[value="${filter}"]`);
+        if (input) {
+          input.checked = true;
+          handleFilterSelection();
+        }
+      });
+    }
   }
 }
+
+
+
+
+
+
+
+
 
 // Modify the Promise.all block to include authors
 Promise.all([
