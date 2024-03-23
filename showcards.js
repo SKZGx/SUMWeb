@@ -8,15 +8,6 @@ let modsData;
 let otherData;
 let filteredData;
 
-
-window.addEventListener('load', function() {
-  saveToStorageHandleInitialURLParams();
-  // Call loadFromStorageHandleInitialURLParams to apply filters when the page is loaded
-  loadFromStorageHandleInitialURLParams();
-});
-
-
-
 // Function to create a card for each mod
 function createModCard(mod) {
   const card = document.createElement('div');
@@ -139,7 +130,7 @@ function truncateText(text, maxLength) {
 }
 
 
-// Function to display cards based on the current page
+// Function to display cards based on the current page and data
 function displayCards(currentPage, pageSize, data) {
   const startIndex = (currentPage - 1) * pageSize;
   const endIndex = startIndex + pageSize;
@@ -149,11 +140,11 @@ function displayCards(currentPage, pageSize, data) {
   // Check if the container exists before setting innerHTML
   const cardsContainer = document.querySelector('.CardsContainer');
   if (cardsContainer) {
-      // Clear existing cards
-      cardsContainer.innerHTML = '';
-      currentData.forEach(item => createModCard(item)); // Replace createCard with createModCard
+    // Clear existing cards
+    cardsContainer.innerHTML = '';
+    currentData.forEach(item => createModCard(item)); // Replace createCard with createModCard
   } else {
-      console.error("Error: Cards container not found!");
+    console.error("Error: Cards container not found!");
   }
 }
 
@@ -410,32 +401,6 @@ if (modsData && otherData) {
   updateTotalTranslation(modsData, otherData);
 }
 
-let isPageLoaded = false; // Variable to track whether the page has loaded
-
-// Function to perform a hard refresh (Ctrl+F5)
-function hardRefresh() {
-  location.reload(true); // Reload the page with a hard refresh
-}
-
-// Event listener to perform a hard refresh when the page loads or reloads
-window.addEventListener('load', () => {
-  const isPageLoaded = sessionStorage.getItem('isPageLoaded');
-
-  if (performance.navigation.type === 1 && !isPageLoaded) { // Check if it's a page reload and not a hard reload
-    hardRefresh(); // Call the hardRefresh function
-    sessionStorage.setItem('isPageLoaded', true); // Set the isPageLoaded flag in sessionStorage
-  } else {
-    sessionStorage.removeItem('isPageLoaded'); // Remove the isPageLoaded flag from sessionStorage
-  }
-});
-
-
-
-
-
-
-
-
 // Function to update the URL with the current page and selected filters
 function updateURL(page) {
   const urlParams = new URLSearchParams(window.location.search);
@@ -476,8 +441,6 @@ function toggleModsOtherCheckbox() {
         handleFilterSelection();
       }
     });
-  } else {
-    console.error("Error: Mods or Other checkboxes not found!");
   }
 }
 
@@ -524,17 +487,16 @@ function handleFilterSelection() {
   updateURL(currentPage, selectedFilters);
 }
 
+
+
+
 // Call the toggleModsOtherCheckbox function to set up the event listeners
 toggleModsOtherCheckbox();
 
-
-
-function handleInitialURLParams (){
-  saveToStorageHandleInitialURLParams();
-  loadFromStorageHandleInitialURLParams();
-}
+let selectedFilters = 'none'; // Initialize selectedFilters variable with 'none' as default
 
 function saveToStorageHandleInitialURLParams() {
+  console.log('Saving initial URL parameters to variables...');
   const urlParams = new URLSearchParams(window.location.search);
   const pageParam = urlParams.get('page');
   const filterParam = urlParams.get('filter');
@@ -544,17 +506,18 @@ function saveToStorageHandleInitialURLParams() {
   }
 
   if (filterParam) {
-    sessionStorage.setItem('selectedFilters', filterParam);
+    selectedFilters = filterParam; // Update selectedFilters variable
+    console.log('Saved filter parameters to variables:', filterParam);
   } else {
-    // If filterParam is empty or null, set sessionStorage to 'none'
-    sessionStorage.setItem('selectedFilters', 'none');
+    console.log('No filter parameters found in URL.');
   }
 }
 
 function loadFromStorageHandleInitialURLParams() {
-  const filterParam = sessionStorage.getItem('selectedFilters');
+  console.log('Loading filter parameters from variables...');
+  const filterParam = selectedFilters;
 
-  if (filterParam && filterParam !== 'none') { // Check if filterParam is not 'none'
+  if (filterParam && filterParam !== 'none') {
     const filters = filterParam.split('&');
     // Update selected filters in the UI
     filters.forEach(filter => {
@@ -576,11 +539,12 @@ function loadFromStorageHandleInitialURLParams() {
         }
       });
     }
+    console.log('Loaded filter parameters from variables:', filterParam);
   } else {
-    // If filterParam is 'none' or null, clear the sessionStorage
-    sessionStorage.removeItem('selectedFilters');
+    console.log('No filter parameters found in variables.');
   }
 }
+
 
 
 
@@ -644,32 +608,50 @@ function applyFilters() {
 
 
 
-// Modify the Promise.all block to include authors
+// Load mods and other data
 Promise.all([
   fetch('mods.json').then(response => response.json()),
   fetch('other.json').then(response => response.json())
 ])
   .then(([mods, other]) => {
+    // Assign mods and other data to variables
     modsData = mods;
     otherData = other;
-    allData = [...modsData, ...otherData];
+    allData = [...modsData, ...otherData]; // Initialize allData with mods and other data
     filteredData = allData; // Initialize filteredData with allData
 
-    // Get the unique authors from mods and other data
+    // Get unique authors from mods and other data
     const uniqueAuthors = getUniqueAuthors(mods, other);
 
+    // Initialize page size and current page from URL parameters
     pageSize = 12;
     currentPage = parseInt(new URLSearchParams(window.location.search).get('page')) || 1;
 
-    handleInitialURLParams(); // Call the new function to handle URL parameters
+    // Save and load initial URL parameters
+    saveToStorageHandleInitialURLParams();
+    loadFromStorageHandleInitialURLParams();
 
+    // Display initial cards and page navigation
     displayCards(currentPage, pageSize, filteredData);
     updatePageNavigation(currentPage, pageSize, filteredData);
+
+    // Create filter inputs based on unique authors
     createFilterInputs(uniqueAuthors);
 
-    // Check if modsData and otherData are defined before calling the function
+    // Update total translation count if mods and other data are defined
     if (modsData && otherData) {
       updateTotalTranslation(modsData, otherData);
     }
+
+    // Call the function that depends on allData
+    handleDataInitialization();
   })
   .catch(error => console.error("Error loading data:", error));
+
+// Define a function to handle operations after allData is initialized
+function handleDataInitialization() {
+  handleFilterSelection();
+  saveToStorageHandleInitialURLParams();
+  loadFromStorageHandleInitialURLParams();
+}
+
