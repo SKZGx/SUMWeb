@@ -10,9 +10,11 @@ let filteredData;
 
 
 window.addEventListener('load', function() {
-  // Call the applyBurgerMenuStyles function when the page is loaded
   handleInitialURLParams();
+  // Call loadFromStorageHandleInitialURLParams to apply filters when the page is loaded
+  loadFromStorageHandleInitialURLParams();
 });
+
 
 
 // Function to create a card for each mod
