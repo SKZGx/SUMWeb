@@ -367,7 +367,7 @@ function createFilterInputs(authors) {
   // Retrieve selected filters from Session Storage and set checkboxes
   const selectedFilters = sessionStorage.getItem('selectedFilters');
   if (selectedFilters) {
-    const filters = selectedFilters.split('%');
+    const filters = selectedFilters.split('&');
     filters.forEach(filter => {
       const input = document.getElementById(filter);
       if (input) {
@@ -416,9 +416,9 @@ if (modsData && otherData) {
 function updateURL(page) {
   const urlParams = new URLSearchParams(window.location.search);
 
-  // Concatenate selected filters with '%' delimiter and add to URL parameters
+  // Concatenate selected filters with '&' delimiter and add to URL parameters
   const selectedFilters = Array.from(document.querySelectorAll('.filtred input:checked')).map(checkbox => checkbox.value);
-  const filtersString = selectedFilters ? selectedFilters.join('%') : '';
+  const filtersString = selectedFilters ? selectedFilters.join('&') : '';
   
   urlParams.set('page', page);
   urlParams.set('filter', filtersString);
@@ -531,7 +531,7 @@ function loadFromStorageHandleInitialURLParams() {
   const filterParam = sessionStorage.getItem('selectedFilters');
 
   if (filterParam && filterParam !== 'none') { // Check if filterParam is not 'none'
-    const filters = filterParam.split('%');
+    const filters = filterParam.split('&');
     // Update selected filters in the UI
     filters.forEach(filter => {
       const input = document.getElementById(filter);
@@ -561,11 +561,32 @@ function loadFromStorageHandleInitialURLParams() {
 
 
 
+// Function to load filter parameters from sessionStorage and apply them to the form
+function loadAndApplyFilterParameters() {
+  const filterParam = new URLSearchParams(window.location.search).get('filter');
+
+  if (filterParam && filterParam !== 'none') {
+    const filters = filterParam.split('&'); // Use '&' as the separator
+    filters.forEach(filter => {
+      const input = document.getElementById(filter);
+      if (input) {
+        input.checked = true;
+      }
+    });
+    handleFilterSelection(); // Apply the saved filters
+  }
+}
+
+// Call loadAndApplyFilterParameters when the page loads
+window.addEventListener('load', loadAndApplyFilterParameters);
+
+
+
 
 // Save filter parameters to sessionStorage
 function saveFilterParameters() {
   const selectedFilters = Array.from(document.querySelectorAll('.filtred input:checked')).map(checkbox => checkbox.value);
-  const filtersString = selectedFilters.join('%');
+  const filtersString = selectedFilters.join('&');
   sessionStorage.setItem('selectedFilters', filtersString);
 }
 
@@ -574,11 +595,13 @@ function loadFilterParameters() {
   const filterParam = sessionStorage.getItem('selectedFilters');
 
   if (filterParam && filterParam !== 'none') {
-    const filters = filterParam.split('%');
+    const filters = filterParam.split('&');
     filters.forEach(filter => {
       const input = document.getElementById(filter);
       if (input) {
         input.checked = true;
+        handleFilterSelection(); // Apply the saved filters
+
       }
     });
     handleFilterSelection(); // Apply the saved filters
