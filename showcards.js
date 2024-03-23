@@ -410,6 +410,30 @@ if (modsData && otherData) {
   updateTotalTranslation(modsData, otherData);
 }
 
+let isPageLoaded = false; // Variable to track whether the page has loaded
+
+// Function to perform a hard refresh (Ctrl+F5)
+function hardRefresh() {
+  location.reload(true); // Reload the page with a hard refresh
+}
+
+// Event listener to perform a hard refresh when the page loads or reloads
+window.addEventListener('load', () => {
+  const isPageLoaded = sessionStorage.getItem('isPageLoaded');
+
+  if (performance.navigation.type === 1 && !isPageLoaded) { // Check if it's a page reload and not a hard reload
+    hardRefresh(); // Call the hardRefresh function
+    sessionStorage.setItem('isPageLoaded', true); // Set the isPageLoaded flag in sessionStorage
+  } else {
+    sessionStorage.removeItem('isPageLoaded'); // Remove the isPageLoaded flag from sessionStorage
+  }
+});
+
+
+
+
+
+
 
 
 // Function to update the URL with the current page and selected filters
