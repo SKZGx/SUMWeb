@@ -10,7 +10,7 @@ let filteredData;
 
 
 window.addEventListener('load', function() {
-  handleInitialURLParams();
+  saveToStorageHandleInitialURLParams();
   // Call loadFromStorageHandleInitialURLParams to apply filters when the page is loaded
   loadFromStorageHandleInitialURLParams();
 });
@@ -415,8 +415,14 @@ if (modsData && otherData) {
 // Function to update the URL with the current page and selected filters
 function updateURL(page) {
   const urlParams = new URLSearchParams(window.location.search);
+
+  // Concatenate selected filters with '%' delimiter and add to URL parameters
+  const selectedFilters = Array.from(document.querySelectorAll('.filtred input:checked')).map(checkbox => checkbox.value);
+  const filtersString = selectedFilters ? selectedFilters.join('%') : '';
+  
   urlParams.set('page', page);
-  urlParams.set('filter', selectedFilters); // Use the selectedFilters variable
+  urlParams.set('filter', filtersString);
+
   window.history.replaceState({}, '', `${window.location.pathname}?${urlParams}`);
 }
 
@@ -456,15 +462,10 @@ function toggleModsOtherCheckbox() {
 
 
 
-let selectedFilters = '';
-
 // Function to handle filter selection
 function handleFilterSelection() {
-  selectedFilters = ''; // Reset selected filters
-  const checkedFilters = Array.from(document.querySelectorAll('.filtred input:checked')).map(checkbox => checkbox.value);
-  selectedFilters = checkedFilters.join('%'); // Save selected filters to the variable
+  const selectedFilters = Array.from(document.querySelectorAll('.filtred input:checked')).map(checkbox => checkbox.value);
 
-  console.log('Selected Filters:', selectedFilters); // Add console log statement here
   // Apply the selected filters to display relevant content
   if (selectedFilters.length === 0) {
     // If no filters are selected, show all data
@@ -472,7 +473,7 @@ function handleFilterSelection() {
   } else {
     // Filter data based on selected filters
     filteredData = allData.filter(item => {
-      return checkedFilters.every(filter => {
+      return selectedFilters.every(filter => {
         if (filter === 'Other') {
           return otherData.includes(item);
         } else if (filter === 'Mods') {
@@ -488,6 +489,7 @@ function handleFilterSelection() {
         return true;
       });
     });
+    toggleModsOtherCheckbox();
   }
 
   // Update the displayed cards and page navigation with the filtered data
@@ -495,7 +497,7 @@ function handleFilterSelection() {
   updatePageNavigation(currentPage, pageSize, filteredData);
 
   // Update the URL with the current page and selected filters
-  updateURL(currentPage);
+  updateURL(currentPage, selectedFilters);
 }
 
 // Call the toggleModsOtherCheckbox function to set up the event listeners
@@ -517,10 +519,10 @@ function saveToStorageHandleInitialURLParams() {
     currentPage = parseInt(pageParam);
   }
 
-  if (filterParam !== null && filterParam !== '') { // Check if filterParam is not null or empty
+  if (filterParam) {
     sessionStorage.setItem('selectedFilters', filterParam);
   } else {
-    // If filterParam is null or empty, set sessionStorage to 'none'
+    // If filterParam is empty or null, set sessionStorage to 'none'
     sessionStorage.setItem('selectedFilters', 'none');
   }
 }
@@ -528,42 +530,66 @@ function saveToStorageHandleInitialURLParams() {
 function loadFromStorageHandleInitialURLParams() {
   const filterParam = sessionStorage.getItem('selectedFilters');
 
-  if (filterParam) {
+  if (filterParam && filterParam !== 'none') { // Check if filterParam is not 'none'
     const filters = filterParam.split('%');
     // Update selected filters in the UI
     filters.forEach(filter => {
       const input = document.getElementById(filter);
       if (input) {
         input.checked = true;
+        handleFilterSelection(); // Trigger filter selection after setting checkboxes
       }
     });
 
     // Set selected filters in the form with id "filtersForm"
     const filtersForm = document.getElementById('filtersForm');
     if (filtersForm) {
-      // Reset selected filters before setting new ones
-      const checkboxes = filtersForm.querySelectorAll('input[type="checkbox"]');
-      checkboxes.forEach(checkbox => {
-        checkbox.checked = false;
-      });
-      
-      // Set selected filters
       filters.forEach(filter => {
         const input = filtersForm.querySelector(`input[value="${filter}"]`);
         if (input) {
           input.checked = true;
+          handleFilterSelection(); // Trigger filter selection after setting checkboxes
         }
       });
-      
-      // Trigger filter selection after setting checkboxes
-      handleFilterSelection();
     }
+  } else {
+    // If filterParam is 'none' or null, clear the sessionStorage
+    sessionStorage.removeItem('selectedFilters');
   }
 }
 
 
 
 
+
+// Save filter parameters to sessionStorage
+function saveFilterParameters() {
+  const selectedFilters = Array.from(document.querySelectorAll('.filtred input:checked')).map(checkbox => checkbox.value);
+  const filtersString = selectedFilters.join('%');
+  sessionStorage.setItem('selectedFilters', filtersString);
+}
+
+// Load filter parameters from sessionStorage and apply them to the form
+function loadFilterParameters() {
+  const filterParam = sessionStorage.getItem('selectedFilters');
+
+  if (filterParam && filterParam !== 'none') {
+    const filters = filterParam.split('%');
+    filters.forEach(filter => {
+      const input = document.getElementById(filter);
+      if (input) {
+        input.checked = true;
+      }
+    });
+    handleFilterSelection(); // Apply the saved filters
+  }
+}
+
+// Call saveFilterParameters when filters are applied
+function applyFilters() {
+  saveFilterParameters();
+  // Apply filters logic
+}
 
 
 
